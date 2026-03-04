@@ -1,0 +1,34 @@
+1. É um algoritmo de ordenação rápido e eficiente, sendo um dos algoritmos mais utilizados, que usa a técnica de dividir e conquistar para organizar listas. Sendo um pouco parecida com a busca binária.
+
+2. Inicialmente, o algoritmo escolhe um elemento como pivô (o pivô é um elemento qualquer da lista) e particiona a lista em duas sublistas, uma com elementos menores que o pivô posicionados na esquerda do pivô e outro com elementos maiores posicionados na direita do pivô. Ele repete esse processo recursivamente até a lista estar completamente ordenada.
+
+3.
+https://resulta.do/50723c81d300
+15, 89, 11, 55, 32, 16, 21
+
+Pivô: 15 (pode ser qualquer elemento, estou utilizando o primeiro da lista como pivô)
+Menores: 11
+Maiores: 89, 55, 32, 16, 21
+
+Lista: 11, 15 (junta os elementos do lado "esquerdo" (menores que o pivô, pivô e maiores que o pivô, que vamos ordenar agora)
+
+Pivô dos maiores: 89
+Menores: 55, 32, 16, 21
+Maiores: nenhum
+
+Pivô dos menores: 55
+Menores: 32, 16, 21
+Maiores: nenhum
+
+Pivô dos menores: 32
+Menores: 16, 21
+Maiores: nenhum
+
+Pivô dos menores: 16
+Menores: nenhum
+Maiores: 21
+
+Agora é so juntar na ordem: Menor, pivô, maior
+
+16, 21, 32, 55, 89
+Na lista: 11, 15, 16, 21, 32, 55, 89
